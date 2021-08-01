@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body class="bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="#">Bootstrap</a>
+              <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="#column">column</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#Flex">Flex</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#tab">tab</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#Embeds">Embeds</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#modal">modal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#card">card</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#accordion">accordion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#contactform">contactform</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!--スライドショー-->
+    <div class="keyvisual">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+             <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/パターン1.png" class="d-block w-50 mx-auto" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>作例1</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/パターン2.jpg" class="d-block w-50 mx-auto" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>作例2</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/パターン3.png" class="d-block w-50 mx-auto" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>作例3</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/パターン4.jpg" class="d-block w-50 mx-auto" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>作例4</h5>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+    </div>
+
+
+    <!--？-->
+    <div class="container bg-white py-5 my-5">
+        <!--Bootstrapの特徴-->
+        <div id="column">
+            <h2 class="text-center pt-5 pb-3">Bootstrapの特徴</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <img class="img-fluid" src="img/重ねる.png">
+            </div>
+            <div class="col-md-4 col-12">
+              <img class="img-fluid" src="img/並べる.png">
+          </div>
+          <div class="col-md-4 col-12">
+            <img class="img-fluid" src="img/グラデーション.png">
+          </div>
+        </div>
+
+
+        <!--お客様の声-->
+        <!--しもむらさん動画105行目くらい d-flexとは？-->
+        <div id="Flex">
+          <h2 class="text-center pt-5 pb-3">お客様の声</h2>
+        </div>
+        <div class="d-flex flex-wrap-reverse justify-content-center">
+          <div class="col-md-6 col-12 p-0 align-self-center h3 p-4">
+            動画の説明がとても分かりやすかったです。
+          </div>
+          <div class="col-md-6 col-12 p-0 align-self-center">
+            <img class="img-fluid" src="img/img7.jpg" alt="">
+          </div>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center">
+          <div class="col-md-6 col-12 p-0 align-self-center">
+            <img class="img-fluid" src="img/img8.jpg" alt="">
+          </div>
+          <div class="col-md-6 col-12 p-0 align-self-center h3 p-4">
+            とても簡単に作ることができました。
+          </div>
+        </div>
+        
+
+        <!--Bootstrapのタブ-->
+        <div id="tab">
+          <h2 class="text-center pt-5 pb-3">Bootstrapのタブ</h2>
+        </div>
+        <div class="tab">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item col-4 p-0" role="presentation">
+              <a class="nav-link active text-center" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">グリッドシステム</a>
+            </li>
+            <li class="nav-item col-4 p-0" role="presentation">
+              <a class="nav-link text-center" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">OOCSS</a>
+            </li>
+            <li class="nav-item col-4 p-0" role="presentation">
+              <a class="nav-link text-center" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">豊富なコンポーネント</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="col-md-8 col-12 my-5 mx-auto">
+                Bootstrapでは横幅を１２個の列に分けたグリッドシステムを採用したデザインになっています。 １２は２,3,4,6で割り切れるのでレスポンシブデザインが用意になっています。
+              </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="col-md-8 col-12 my-5 mx-auto">
+                BootStrapではOOCSS（Object-Oriented CSS）というオブジェクト指向CSSが採用されています。 構造と見た目を切り離した設計になります。
+              </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <div class="col-md-8 col-12 my-5 mx-auto">
+                このサイトでも使われているようにBootstrapでは様々なコンポーネントが用意されています。 公式サイトで調べながら使いながら慣れていきましょう。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--YouTube-->
+        <div id="Embeds">
+          <h2 class="text-center pt-5 pb-3">YouTube</h2>
+        </div>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/RubL0RanZFk" title="YouTube video" allowfullscreen></iframe>
+        </div>
+
+        <!--作例-->
+        <div id="card">
+          <h2 class="text-center pt-5 pb-3">作例</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <div class="card">
+              <img src="img/パターン1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">作例１</h5>
+                <p class="card-text">着画にショップのロゴを重ねます。</p>
+                <a href="https://youtu.be/3axPqm43Rto" class="btn btn-outline-dark">作成方法はコチラ</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="card">
+              <img src="img/パターン2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">作例２</h5>
+                <p class="card-text">背景に薄くした着画を置き、その上にアイテムの画像を重ねます。</p>
+                <a href="https://youtu.be/Avd-bQhBBP0" class="btn btn-outline-dark">作成方法はコチラ</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="card">
+              <img src="img/パターン3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">作例３</h5>
+                <p class="card-text">着画を左右どちらかに置き（薄くしない）、もう片方にアイテムのカラーバリエーションの画像を重ねます。</p>
+                <a href="https://youtu.be/MnWCIcrWFAg" class="btn btn-outline-dark">作成方法はコチラ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--よくある質問-->
+        <div id="modal">
+          <h2 class="text-center pt-5 pb-3">よくある質問</h2>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div type="button" class="text-dark border p-3" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+              どのサイトからダウンロードすればいいですか？
+            </div>
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h6 class="modal-title" id="exampleModal1Label">どのサイトからダウンロードすればいいですか？</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h6>GIMPの公式HPからダウンロードしてください。</h6>
+                    <a class="btn btn-outline-primary btn-sm" href="https://www.gimp.org/" role="button">GIMP公式HP</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div type="button" class="text-dark border p-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              先生と同じ画面表示にするにはどのようにすればいいですか？
+            </div>
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h6 class="modal-title" id="exampleModal2Label">先生と同じ画面表示にするにはどのようにすればいいですか？</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h6>必要でないダイアログを非表示にしてください。もしくは、[編集]＞[設定]＞[ウィンドウの設定]から「保存済ウィンドウ位置のリセット」を行ってください。</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div type="button" class="text-dark border p-3" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+              その他のＦＡＱ
+            </div>
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h6 class="modal-title" id="exampleModal3Label">その他のＦＡＱ</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h6>動画にまとめましたので、こちらをご覧ください。</h6>
+                    <div class="ratio ratio-16x9">
+                      <iframe src="https://www.youtube.com/embed/6pTERDrBAhI" title="YouTube video" allowfullscreen></iframe>
+                    </div>            
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--よくある質問-->
+        <div id="accordion">
+          <h2 class="text-center pt-5 pb-3">価格とシステム</h2>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                費用は？
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                デザイン１件あたり3,000円(税込み)となります。質問に回答する動画を別途必要とする場合は、動画１本あたり2,000円(税込み)となります。
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                期間は？
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                レッスンの期間の設定はございません。<br>
+                お客様がご提示されたデザインをGIMPで作成する方法について、レクチャー動画をご購入いただくかたちをとっているためです。
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                １レッスンあたりの受講可能人数は？
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                レッスンの受講可能人数についても設定しておりません。<br>
+                お客様がご提示されたデザインをGIMPで作成する方法について、レクチャー動画をご購入いただくかたちをとっているためです。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--お問い合わせ-->
+        <div id="contactform">
+          <h2 class="text-center pt-5 pb-3">お問い合わせ</h2>
+        </div>
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-6">
+            <label for="validationCustom01" class="form-label">お名前</label>
+            <input type="text" class="form-control" id="validationCustom01" value="画像太郎" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Eメールアドレス</label>
+            <input type="text" class="form-control" id="validationCustom02" value="gimp@gmail.com" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-12">
+            <label for="validationCustomUsername" class="form-label">ご希望の動画本数</label>
+            <button class="btn btn-outline-dark dropdown-toggle ms-3" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              動画本数
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">１本</a></li>
+              <li><a class="dropdown-item" href="#">２本</a></li>
+              <li><a class="dropdown-item" href="#">３本</a></li>
+              <li><a class="dropdown-item" href="#">４本</a></li>
+              <li><a class="dropdown-item" href="#">５本</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">６本以上（別料金となります。）</a></li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                利用規約に同意する。
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">送信</button>
+          </div>
+        </form>
+    </div>
+
+    <footer class="bg-white">
+      <div class="contatiner">
+        <div class="row m-0">
+          <div class="col-md-4 col-12">
+           <div class="p-3">
+            <h4 class="d-inline-block py-3 border-bottom border-info">プロフィール</h4>
+           </div>         
+           <div>
+            <img class="img-fluid rounded-circle d-block w-50 mx-auto" src="img/profile.png" alt="">
+           </div>
+           <div class="pt-3">
+            趣味は写真を撮ること、フットサル、映画、珈琲を淹れることなど、多数。人生で一番好きな時間は、家族と過ごす時間。2020年、家族のためにプログラマーになりました。
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="p-3">
+              <h4 class="d-inline-block py-3 border-bottom border-info">ポートフォリオ</h4>
+              <div class="pt-3 mx-auto">
+                できること：<br>
+                 <ul>
+                   <li>HTML/CSS</li>
+                   <li>JavaScript</li>
+                   <li>PHP</li>
+                   <li>WoirdPress</li>
+                   <li>Bootstrap</li>
+                   <li>Adobe XD</li>
+                   <li>Adobe Illustrator</li>
+                   <li>Adobe Photoshop</li>
+                   <li>Adobe PremierePro</li>
+                   <li>GIMP</li>
+                 </ul>
+                </div>
+            </div>         
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="p-3">
+              <h4 class="d-inline-block py-3 border-bottom border-info">Twitter</h4>
+            </div>
+            <a class="twitter-timeline" data-lang="ja" data-height="500" href="https://twitter.com/rintaro_hattori?ref_src=twsrc%5Etfw">Tweets by rintaro_hattori</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>        
+        </div>
+      </div>
+      <div class="bg-dark text-white text-center p-3">
+        Copyright - rintaro hattori, 2020 All Rights Reserved.
+      </div>
+
+      
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
